@@ -1,0 +1,15 @@
+[
+  {
+    "arguments": [
+      "/nix/store/mpm3i0sbqc9svfch6a17179fs64dz2kv-gcc-wrapper-13.3.0/bin/gcc",
+      "-c",
+      "-Icomponent/",
+      "-o",
+      "build/main",
+      "src/main.c"
+    ],
+    "directory": "/media/big/coding/ccc",
+    "file": "/media/big/coding/ccc/src/main.c",
+    "output": "/media/big/coding/ccc/build/main"
+  }
+]
