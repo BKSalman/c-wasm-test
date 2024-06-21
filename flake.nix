@@ -4,14 +4,14 @@
     zig.url = "github:mitchellh/zig-overlay";
   };
 
-  outputs = { nixpkgs, zig, ... }:
+  outputs = { nixpkgs, ... }:
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
-      overlays = [
-        zig.overlays.default
-      ];
+      # overlays = [
+      #   zig.overlays.default
+      # ];
     };
   in {
     devShells.${system}.default = pkgs.mkShell.override {
